@@ -9,8 +9,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: #f4f4f4;
+    color: #2c3e50;
+    background: #ecf0f1;
     scroll-behavior: smooth;
 }
 
@@ -24,7 +24,7 @@ body {
 
 /* Header Styling */
 header {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: #2980b9;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -37,13 +37,11 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    animation: fadeInDown 1s ease-out;
 }
 
 header p {
     font-size: 1.2em;
     margin: 10px 0 0;
-    animation: fadeInDown 1s ease-out;
 }
 
 header nav ul {
@@ -68,40 +66,36 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: #2980b9;
     color: #fff;
     padding: 60px 0;
     text-align: center;
-    animation: fadeIn 2s ease-out;
 }
 
 .hero h2 {
     font-size: 3em;
     margin-bottom: 20px;
-    animation: fadeInUp 1s ease-out;
 }
 
 .hero p {
     font-size: 1.5em;
     margin-bottom: 20px;
-    animation: fadeInUp 1s ease-out;
 }
 
 .hero .btn {
     display: inline-block;
     padding: 10px 20px;
     background: #fff;
-    color: #ff7e5f;
+    color: #2980b9;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2em;
     transition: background 0.3s, color 0.3s;
-    animation: fadeInUp 1s ease-out;
 }
 
 .hero .btn:hover {
-    background: #ff7e5f;
+    background: #2980b9;
     color: #fff;
 }
 
@@ -112,14 +106,13 @@ header nav ul li a:hover {
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    animation: fadeIn 2s ease-out;
 }
 
 .section h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
-    color: #333;
+    color: #2c3e50;
 }
 
 .about-content {
@@ -145,20 +138,20 @@ header nav ul li a:hover {
 }
 
 #skills ul li {
-    background: #f4f4f4;
+    background: #bdc3c7;
     margin-bottom: 10px;
     padding: 10px;
-    border-left: 5px solid #333;
+    border-left: 5px solid #2c3e50;
     transition: background 0.3s, border-left 0.3s;
 }
 
 #skills ul li:hover {
-    background: #feb47b;
-    border-left: 5px solid #ff7e5f;
+    background: #e67e22;
+    border-left: 5px solid #d35400;
 }
 
 #skills ul li a {
-    color: #333;
+    color: #2c3e50;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -173,8 +166,22 @@ header nav ul li a:hover {
     gap: 20px;
 }
 
+.skill-category {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
 .experience-item, .project-item {
-    background: #f9f9f9;
+    background: #bdc3c7;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -183,12 +190,12 @@ header nav ul li a:hover {
 }
 
 .experience-item:hover, .project-item:hover {
-    background: #ff7e5f;
+    background: #e67e22;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 footer {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: #2980b9;
     color: #fff;
     text-align: center;
     padding: 10px 0;
