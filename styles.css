@@ -115,54 +115,9 @@ header nav ul li a:hover {
     color: #2c3e50;
 }
 
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.about-content img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-#about p, #skills ul, #experience .experience-item, #projects .project-item, #contact p {
-    margin-bottom: 20px;
-}
-
-#skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-#skills ul li {
-    background: #bdc3c7;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-left: 5px solid #2c3e50;
-    transition: background 0.3s, border-left 0.3s;
-}
-
-#skills ul li:hover {
-    background: #e67e22;
-    border-left: 5px solid #d35400;
-}
-
-#skills ul li a {
-    color: #2c3e50;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-#skills ul li a:hover {
-    color: #fff;
-}
-
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -173,65 +128,31 @@ header nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.skill {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.skill-category h3 {
+    font-size: 1.5em;
     margin-bottom: 10px;
+    color: #2980b9;
+    text-decoration: underline;
 }
 
-.experience-item, .project-item {
-    background: #bdc3c7;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: background 0.3s, box-shadow 0.3s;
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.experience-item:hover, .project-item:hover {
-    background: #e67e22;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+.skill-icons img {
+    width: 40px;
+    height: 40px;
 }
 
+/* Footer */
 footer {
     background: #2980b9;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* Responsive Design */
@@ -246,13 +167,7 @@ footer {
         padding: 0 1rem;
     }
 
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-content img {
-        width: 120px;
-        height: 120px;
+    .skills-grid {
+        grid-template-columns: 1fr;
     }
 }
